@@ -89,6 +89,35 @@
     @include m.font-size(20);
   }
 
+  &__item,
+  &__link {
+    position: relative;
+    display: inline;
+    opacity: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 4px;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.1s ease;
+    }
+
+    &:hover {
+      opacity: 0.85;
+
+      &::before {
+      transform: scaleX(1);
+      }
+    }
+  }
+
   &__overlay {
     position: fixed;
     inset: 0;

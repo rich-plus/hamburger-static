@@ -16,6 +16,15 @@
   @include m.clamp-mobile(min-height, 642, 681);
   padding: 13px 16px 16px 16px;
 
+  transition:
+   box-shadow 0.25s ease,
+   transform 0.25s ease;
+  
+  &:hover {
+    box-shadow: 0 8px 20px vars.$overlay-black-20;
+    transform: translateY(-5px)
+  }
+
   @include m.mq(desktop) {
     @include m.clamp-desktop(min-height, 681, 1197);
     @include m.clamp-desktop(padding-top, 13, 24);

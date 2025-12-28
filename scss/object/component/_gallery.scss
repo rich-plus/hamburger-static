@@ -17,11 +17,11 @@
   }
 
   @include m.mq() {
-    grid-template-columns: repeat(auto-fit, minmax(349px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
   
   @include m.mq(desktop) {
-    grid-template-columns: repeat(auto-fit, minmax(438px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
   
   &__img {
