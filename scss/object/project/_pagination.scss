@@ -57,6 +57,11 @@
   }
 
   &__item {
+    opacity: 1;
+    transition:
+     background-color 0.15s ease,
+     opacity 0.15s ease;
+
     @include m.mq() {
       display: inline-flex;
       justify-content: center;
@@ -65,9 +70,12 @@
       height: 35px;
     }
 
-    &:hover {
-      background-color: vars.$color-gray-100;
-    }
+  }
+  &__list li:first-child a:hover {
+    opacity: 0.85;
+  }
+  &__list li:not(:first-child) a:hover {
+    background-color: vars.$color-gray-100;
   }
 
 // -------------------------------------------------

@@ -1107,6 +1107,10 @@ body.is-open {
     gap: 15px;
   }
 }
+.p-pagination__item {
+  opacity: 1;
+  transition: background-color 0.15s ease, opacity 0.15s ease;
+}
 @media screen and ( min-width: 768px ) {
   .p-pagination__item {
     display: inline-flex;
@@ -1116,7 +1120,10 @@ body.is-open {
     height: 35px;
   }
 }
-.p-pagination__item:hover {
+.p-pagination__list li:first-child a:hover {
+  opacity: 0.85;
+}
+.p-pagination__list li:not(:first-child) a:hover {
   background-color: #F5F5F5;
 }
 .p-pagination__arrows {
