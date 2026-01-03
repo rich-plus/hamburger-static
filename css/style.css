@@ -374,7 +374,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 57px;
-  padding-let: clamp(0px, calc(-2.9894770408rem + 12.7551020408vw), 50px);
+  padding-left: clamp(0px, calc(-2.9894770408rem + 12.7551020408vw), 50px);
 }
 .c-list__ordered {
   margin-left: 19px;
