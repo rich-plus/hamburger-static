@@ -13,6 +13,7 @@ body {
   background-color: vars.$color-cream-50;
   box-sizing: border-box;
   line-height: vars.$lh-m;
+  line-break: strict;
 }
 
 ul {

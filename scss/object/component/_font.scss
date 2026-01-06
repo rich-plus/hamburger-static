@@ -34,7 +34,10 @@
 
   &--xl {
     @extend .c-font--bold;
-    @include m.clamp-mobile(font-size, 36, 60);
+      @include m.clamp-mobile(font-size, 28, 48);
+    @include m.mq(desktop) {
+      @include m.clamp-desktop(font-size, 48, 60);
+    }
   }
 
   &--l {

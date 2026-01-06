@@ -17,10 +17,22 @@
 
     &-title {
       left: 0;
+      background-color: vars.$overlay-black-30;
+      padding: 6px 12px;
+      border-radius: 8px;
+      display: inline-block;
 
       @include m.mq(mobile) {
-        @include m.clamp-mobile(left, 25, 86);
+        @include m.clamp-mobile(left, 8, 86);
+        @include m.clamp-mobile(margin-right, 8, 86);
       }
+      @include m.mq() {
+        @include m.clamp-desktop-multi(padding, (60 60 149 60), (63 100 274 100));
+      }
+      @include m.mq(desktop) {
+        @include m.clamp-desktop-multi(padding, (60 60 149 60), (63 100 274 100));
+      }
+
     }
   }
 
