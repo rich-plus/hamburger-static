@@ -960,7 +960,7 @@ a {
 }
 .p-single__mv-title {
   left: 0;
-  background-color: rgba(60, 42, 16, 0.3116);
+  background-color: rgba(60, 42, 16, 0.5);
   padding: 6px 12px;
   border-radius: 8px;
   display: inline-block;
