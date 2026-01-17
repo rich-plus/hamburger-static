@@ -616,7 +616,7 @@ a {
 }
 .p-sidemenu__item:hover, .p-sidemenu__link:hover {
   opacity: 0.85;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   color: #3C2A10;
 }
 .p-sidemenu__link {
@@ -960,7 +960,7 @@ a {
 }
 .p-single__mv-title {
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3116);
+  background-color: rgba(60, 42, 16, 0.3116);
   padding: 6px 12px;
   border-radius: 8px;
   display: inline-block;
