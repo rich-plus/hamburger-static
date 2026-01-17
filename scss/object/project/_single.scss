@@ -26,13 +26,6 @@
         @include m.clamp-mobile(left, 8, 86);
         @include m.clamp-mobile(margin-right, 8, 86);
       }
-      @include m.mq() {
-        @include m.clamp-desktop-multi(padding, (60 60 149 60), (63 100 274 100));
-      }
-      @include m.mq(desktop) {
-        @include m.clamp-desktop-multi(padding, (60 60 149 60), (63 100 274 100));
-      }
-
     }
   }
 
